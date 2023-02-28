@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CF421CE029AE14EE009171BF /* SmartCardSecretKit in Frameworks */ = {isa = PBXBuildFile; productRef = CF421CDF29AE14EE009171BF /* SmartCardSecretKit */; };
 		CF59499629AE139200E6563F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF59499529AE139200E6563F /* AppDelegate.swift */; };
 		CF59499829AE139200E6563F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF59499729AE139200E6563F /* ViewController.swift */; };
 		CF59499A29AE139300E6563F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF59499929AE139300E6563F /* Assets.xcassets */; };
@@ -20,6 +21,7 @@
 		CF59499929AE139300E6563F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CF59499C29AE139300E6563F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CF59499E29AE139300E6563F /* HardPass.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HardPass.entitlements; sourceTree = "<group>"; };
+		CF5949A629AE141A00E6563F /* Packages */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Packages; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,17 +29,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF421CE029AE14EE009171BF /* SmartCardSecretKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CF421CDE29AE14EE009171BF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CF59498929AE139200E6563F = {
 			isa = PBXGroup;
 			children = (
+				CF5949A629AE141A00E6563F /* Packages */,
 				CF59499429AE139200E6563F /* HardPass */,
 				CF59499329AE139200E6563F /* Products */,
+				CF421CDE29AE14EE009171BF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,6 +89,9 @@
 			dependencies = (
 			);
 			name = HardPass;
+			packageProductDependencies = (
+				CF421CDF29AE14EE009171BF /* SmartCardSecretKit */,
+			);
 			productName = HardPass;
 			productReference = CF59499229AE139200E6563F /* HardPass.app */;
 			productType = "com.apple.product-type.application";
@@ -339,6 +354,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CF421CDF29AE14EE009171BF /* SmartCardSecretKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SmartCardSecretKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CF59498A29AE139200E6563F /* Project object */;
 }
